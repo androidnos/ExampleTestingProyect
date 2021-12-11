@@ -8,6 +8,15 @@ import org.junit.Test
 class OperationsTest {
 
     @Test
+    fun `Test call Operation class`() {
+        /* When */
+        val operations = Operations()
+
+        /* Then */
+        assertNotNull(operations)
+    }
+
+    @Test
     fun `Test addition`() {
         /* Given */
         val itemExpected = 30

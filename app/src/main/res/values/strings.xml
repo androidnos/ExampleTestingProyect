@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">ExampleTestingProyect</string>
+    <string name="add_text_string">Add Text</string>
 </resources>
