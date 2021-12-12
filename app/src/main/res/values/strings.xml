@@ -1,4 +1,8 @@
 <resources>
-    <string name="app_name">ExampleTestingProyect</string>
-    <string name="add_text_string">Add Text</string>
+    <string name="app_name">Razas de perros</string>
+
+    <string name="dialog_error_title">Error en la petición al servidor</string>
+    <string name="acept_dialog_error">Reintentar petición</string>
+    <string name="loading_title">Loading</string>
+    <string name="loading_message">Wait while loading...</string>
 </resources>
