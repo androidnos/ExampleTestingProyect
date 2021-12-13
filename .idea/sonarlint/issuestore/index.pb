@@ -17,8 +17,6 @@ P
 Lapp/src/main/java/com/example/exampletestingproyect/models/DataModelClass.kt,e/5/e5880ee23fba405257751c3ee8293edaf901465e
 x
 Happ/src/main/java/com/example/exampletestingproyect/models/BreedModel.kt,d/e/dee7966e83228407a75c03867db438399892d0b3
-@
-app/build.gradle,f/4/f4a01d6a4fcb971362ec00a83903fd3902f52164
 …
 Uapp/src/main/java/com/example/exampletestingproyect/view/fragment/first/IFirstView.kt,9/3/939596bffd9b8560caeab88a7854548c350c4c72
 ‡
@@ -37,10 +35,6 @@ Qapp/src/main/java/com/example/exampletestingproyect/models/GeneralGetHttpModel.
 Lapp/src/main/java/com/example/exampletestingproyect/retrofit/APIInterface.kt,7/c/7c4693d280c9f0988c19d64fc73df6789edfc957
 x
 Happ/src/main/java/com/example/exampletestingproyect/view/MainActivity.kt,f/a/fa372b519e302be2d0e28662148a6457e72f21ee
-‡
-Wapp/src/main/java/com/example/exampletestingproyect/presenter/second/SecondPresenter.kt,c/c/cc0b0413d58bfe95462b11b8dd54fa4d30d3df12
-…
-Uapp/src/main/java/com/example/exampletestingproyect/presenter/first/FirstPresenter.kt,8/f/8f6ad18ade42b0bef1afe9b4924cde14c106ce5f
 ˆ
 Xapp/src/main/java/com/example/exampletestingproyect/view/fragment/first/FirstFragment.kt,7/c/7cb282f02927491b4ca2a30c8e26ba18be659208
 :
@@ -48,9 +42,3 @@ Xapp/src/main/java/com/example/exampletestingproyect/view/fragment/first/FirstFr
 .gitignore,a/5/a5cc2925ca8258af241be7e5b0381edf30266302
 Š
 Zapp/src/main/java/com/example/exampletestingproyect/view/fragment/secund/SecondFragment.kt,7/1/71d62f009f2d8700a2f03db90bbbc56266a3f942
-y
-Iapp/src/main/java/com/example/exampletestingproyect/retrofit/APIClient.kt,1/5/15484e13e17bf384f78136d5bc5d1e8dd96ed7e5
-‚
-Rapp/src/test/java/com/example/exampletestingproyect/mokito/ClassPrivateFunsTest.kt,3/d/3db91be943c3c976713ca0369f211d0d8b96fc7a
-~
-Napp/src/main/java/com/example/exampletestingproyect/mokito/ClassPrivateFuns.kt,7/f/7ff63cacdbb33d473f501756f6be34bb295052af

@@ -10,7 +10,12 @@ import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 
-
+/**
+ * En estos test se invoca a varios servicios, para poder testear todas las partes de cada llamada necesitaremos hacer varios test
+ * por cada llamada a servicio tenemos un onResponse y un onFailure estos habrá que testearlos
+ * por cada if, nulable, etc... que fraccione la posible salida del recorrido habrá que hacer un test para poder tener la mayor cobertura de testeo
+ * por cada test que hagamos es obligatorio realizar una verificación de donde termina el test
+ */
 class FirstPresenter : IFirstPresenter {
 
     private lateinit var view: IFirstView
@@ -18,7 +23,7 @@ class FirstPresenter : IFirstPresenter {
 
     override fun attactView(view: IFirstView) {
         this.view = view
-        apiInterface = APIClient.getClient()!!.create(APIInterface::class.java)
+        apiInterface = APIClient.getClient().create(APIInterface::class.java)
         callAllList()
     }
 
@@ -30,9 +35,9 @@ class FirstPresenter : IFirstPresenter {
                 call: Call<GeneralGetHttpModel>,
                 response: Response<GeneralGetHttpModel>
             ) {
-                response.body()?.let {
+                response.body()?.message?.let {
                     val listBreedModel = arrayListOf<BreedModel>()
-                    it.message?.forEach { name ->
+                    it.forEach { name ->
                         listBreedModel.add(BreedModel(name))
                     }
                     view.addListAdapter(listBreedModel)

@@ -33,8 +33,12 @@ class SecondPresenter : ISecondPresenter {
                             arrayList.add(item)
                         }
                     }
-                    view.initImageView((arrayList as List<String>).random())
-                    view.hidenLoading()
+                    if (arrayList.isNotEmpty()) {
+                        view.initImageView((arrayList as List<String>).random())
+                        view.hidenLoading()
+                    } else {
+                        view.showError()
+                    }
                 } ?: view.showError()
             }
 

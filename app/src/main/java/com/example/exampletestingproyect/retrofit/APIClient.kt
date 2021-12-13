@@ -12,7 +12,7 @@ class APIClient {
     companion object{
         private const val API_BASE_URL = "https://dog.ceo/api/"
 
-        fun getClient(): Retrofit? {
+        fun getClient(): Retrofit {
             val client: OkHttpClient = OkHttpClient.Builder().build()
             return Retrofit.Builder()
                 .baseUrl(API_BASE_URL)
