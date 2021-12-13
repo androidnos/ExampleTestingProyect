@@ -4,6 +4,9 @@ import okhttp3.OkHttpClient
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
+/**
+ * Documentation public api https://dog.ceo/dog-api/
+ */
 class APIClient {
 
     companion object{

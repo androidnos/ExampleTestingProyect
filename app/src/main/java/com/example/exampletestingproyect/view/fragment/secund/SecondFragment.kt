@@ -32,13 +32,13 @@ class SecondFragment(val name: String): Fragment(), ISecondView {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        imageView = view.findViewById(R.id.imageImageView)
+        presenter.attactView(this)
+        presenter.callBreedImage(name)
         val nameString = name.replace("-"," ")
         nameString.replaceFirstChar { if (it.isLowerCase()) it.titlecase(Locale.getDefault()) else it.toString() }
         val textView = view.findViewById<TextView>(R.id.nameTextView)
         textView.text = nameString
-        imageView = view.findViewById(R.id.imageImageView)
-        presenter.attactView(this)
-        presenter.callBreedImage(name)
     }
 
     override fun initImageView(urlImage: String) {
