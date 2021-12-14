@@ -1,6 +1,6 @@
 package com.example.exampletestingproyect.presenter.second
 
-import com.example.exampletestingproyect.BaseTestPresenterTest
+import com.example.exampletestingproyect.presenter.BaseTestPresenterTest
 import com.example.exampletestingproyect.models.GeneralGetHttpModel
 import com.example.exampletestingproyect.retrofit.APIInterface
 import com.example.exampletestingproyect.view.fragment.secund.ISecondView
@@ -31,6 +31,21 @@ class SecondPresenterTest : BaseTestPresenterTest() {
         presenterTest.setPropertyValue("apiInterface", apiInterface)
     }
 
+    /**
+     * https://www.itdo.com/blog/que-es-bdd-behavior-driven-development/
+     * BDD (Behavior Driven Development), es una estrategia de desarrollo dirigido por comportamiento,
+     * que ha evolucionado desde TDD (Test Driven Development), aunque no se trata de una técnica de testing.
+     *
+     * Para definir los casos BDD para una historia de usuario se deben definir bajo el patrón ‘Given-When-Then’, que se define como:
+    Given ‘dado’: Se especifica el escenario, las precondiciones.
+    When ‘cuando’: Las condiciones de las acciones que se van a ejecutar.
+    Then ‘entonces’: El resultado esperado, las validaciones a realizar.
+
+    Un ejemplo práctico sería:
+    Given: Dado que el usuario no ha introducido ningún dato en el formulario.
+    When: Cuando hace clic en el botón Enviar.
+    Then: Se deben mostrar los mensajes de validación apropiados.
+     */
     @Test
     fun `Test callBreedImage response KO`() {
         /* Given */

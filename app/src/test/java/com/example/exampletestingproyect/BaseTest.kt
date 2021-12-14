@@ -1,17 +1,12 @@
 package com.example.exampletestingproyect
 
-import com.nhaarman.mockitokotlin2.mock
-import org.junit.After
-import org.junit.Before
-import org.mockito.Mockito
-import org.mockito.MockitoAnnotations
-import retrofit2.Retrofit
 import java.lang.reflect.Method
 
-open class BaseTestPresenterTest {
-
-    private val retrofitMock: Retrofit = mock()
-    open val throwable: Throwable = mock()
+/**
+ * Class base de test para acceder a variables y metodos privados
+ * también para invocar métodos privados
+ */
+open class BaseTest {
 
     protected inline fun <reified T : Any> T.setPropertyValue(
         propertyName: String,
@@ -38,14 +33,4 @@ open class BaseTestPresenterTest {
             this,
             *parameters
         ) as T
-
-    @Before
-    open fun setUp() {
-        MockitoAnnotations.openMocks(this)
-    }
-
-    @After
-    open fun tearDown() {
-        Mockito.clearAllCaches()
-    }
 }
