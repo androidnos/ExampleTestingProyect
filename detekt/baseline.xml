@@ -1,0 +1,10 @@
+<?xml version="1.0" ?>
+<SmellBaseline>
+  <ManuallySuppressedIssues></ManuallySuppressedIssues>
+  <CurrentIssues>
+    <ID>NoConsecutiveBlankLines:com.example.exampletestingproyect.junit.Operations.kt:7</ID>
+    <ID>NoMultipleSpaces:com.example.exampletestingproyect.view.fragment.first.FirstFragment.kt:18</ID>
+    <ID>NoUnusedImports:com.example.exampletestingproyect.view.fragment.first.FirstFragment.kt:15</ID>
+    <ID>UnusedImports:FirstFragment.kt$import com.example.exampletestingproyect.view.adapter.SimpleAdapter</ID>
+  </CurrentIssues>
+</SmellBaseline>

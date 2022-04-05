@@ -15,7 +15,7 @@ class SecondPresenter : ISecondPresenter {
 
     override fun attactView(view: ISecondView) {
         this.view = view
-        apiInterface = APIClient.getClient()!!.create(APIInterface::class.java)
+        apiInterface = APIClient.getClient().create(APIInterface::class.java)
     }
 
     override fun callBreedImage(name: String) {
@@ -45,9 +45,6 @@ class SecondPresenter : ISecondPresenter {
             override fun onFailure(call: Call<GeneralGetHttpModel>, t: Throwable) {
                 view.showError()
             }
-
         })
     }
-
-
 }

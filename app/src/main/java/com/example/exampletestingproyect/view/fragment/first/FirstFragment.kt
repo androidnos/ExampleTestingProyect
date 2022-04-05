@@ -12,9 +12,10 @@ import com.example.exampletestingproyect.models.BreedModel
 import com.example.exampletestingproyect.presenter.first.FirstPresenter
 import com.example.exampletestingproyect.view.MainActivity
 import com.example.exampletestingproyect.view.adapter.Adapter
+import com.example.exampletestingproyect.view.adapter.SimpleAdapter
 import java.util.Locale
 
-class FirstFragment : Fragment(), IFirstView {
+class FirstFragment :   Fragment(), IFirstView {
 
     private lateinit var adapter: Adapter
     private val presenter = FirstPresenter()
@@ -82,7 +83,5 @@ class FirstFragment : Fragment(), IFirstView {
                 }"
             )
         }
-
     }
-
 }

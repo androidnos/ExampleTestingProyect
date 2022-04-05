@@ -53,5 +53,4 @@ class MainActivity : AppCompatActivity() {
             .replace(R.id.frameLayout, SecondFragment(name))
             .commit()
     }
-
 }
