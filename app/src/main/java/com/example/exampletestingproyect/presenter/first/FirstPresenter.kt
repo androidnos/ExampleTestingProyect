@@ -48,7 +48,6 @@ class FirstPresenter : IFirstPresenter {
             override fun onFailure(call: Call<GeneralGetHttpModel>, t: Throwable) {
                 view.showError()
             }
-
         })
     }
 
@@ -63,13 +62,12 @@ class FirstPresenter : IFirstPresenter {
                 response.body()?.let {
                     view.updateSublist(breed, it.message)
                     view.hidenLoading()
-                }?: view.showError()
+                } ?: view.showError()
             }
 
             override fun onFailure(call: Call<GeneralGetHttpModel>, t: Throwable) {
                 view.showError()
             }
-
         })
     }
 }

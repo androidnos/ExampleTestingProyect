@@ -8,8 +8,7 @@ import retrofit2.converter.gson.GsonConverterFactory
  * Documentation public api https://dog.ceo/dog-api/
  */
 class APIClient {
-
-    companion object{
+    companion object {
         private const val API_BASE_URL = "https://dog.ceo/api/"
 
         fun getClient(): Retrofit {
@@ -21,5 +20,4 @@ class APIClient {
                 .build()
         }
     }
-
 }

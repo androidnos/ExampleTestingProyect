@@ -7,5 +7,4 @@ interface IFirstPresenter {
     fun attactView(view: IFirstView)
     fun callAllList()
     fun callSubBreed(breed: String)
-
 }

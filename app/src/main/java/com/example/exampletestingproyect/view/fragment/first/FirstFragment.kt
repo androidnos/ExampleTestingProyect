@@ -82,7 +82,5 @@ class FirstFragment : Fragment(), IFirstView {
                 }"
             )
         }
-
     }
-
 }

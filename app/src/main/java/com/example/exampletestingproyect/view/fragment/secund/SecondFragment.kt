@@ -13,7 +13,7 @@ import com.example.exampletestingproyect.view.MainActivity
 import com.squareup.picasso.Picasso
 import java.util.Locale
 
-class SecondFragment(val name: String): Fragment(), ISecondView {
+class SecondFragment(val name: String) : Fragment(), ISecondView {
 
     private lateinit var imageView: ImageView
     private val presenter = SecondPresenter()
@@ -24,10 +24,10 @@ class SecondFragment(val name: String): Fragment(), ISecondView {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        if (activity is MainActivity){
+        if (activity is MainActivity) {
             mainActivity = activity as MainActivity
         }
-        return inflater.inflate(R.layout.second_fragment_layout,container,false)
+        return inflater.inflate(R.layout.second_fragment_layout, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -35,7 +35,7 @@ class SecondFragment(val name: String): Fragment(), ISecondView {
         imageView = view.findViewById(R.id.imageImageView)
         presenter.attactView(this)
         presenter.callBreedImage(name)
-        val nameString = name.replace("-"," ")
+        val nameString = name.replace("-", " ")
         nameString.replaceFirstChar { if (it.isLowerCase()) it.titlecase(Locale.getDefault()) else it.toString() }
         val textView = view.findViewById<TextView>(R.id.nameTextView)
         textView.text = nameString

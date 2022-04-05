@@ -18,7 +18,10 @@ class Adapter(private var list: ArrayList<BreedModel>, private val listener: Lis
         fun bind(item: BreedModel, listener: ListenerAdapter) {
             val textView = view.findViewById(R.id.textView) as TextView
             textView.text =
-                item.name.replaceFirstChar { if (it.isLowerCase()) it.titlecase(Locale.getDefault()) else it.toString() }
+                item.name.replaceFirstChar {
+                    if (it.isLowerCase()) it.titlecase(Locale.getDefault())
+                    else it.toString()
+                }
             textView.setOnClickListener {
                 listener.click(item.name)
             }
