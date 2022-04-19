@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.view.VerifiedInputEvent
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -21,6 +22,7 @@ class FirstFragment :   Fragment(), IFirstView {
     private val presenter = FirstPresenter()
     private lateinit var viewContiner: View
     private var mainActivity: MainActivity? = null
+
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -69,6 +71,10 @@ class FirstFragment :   Fragment(), IFirstView {
 
     override fun showError() {
         mainActivity?.showError { presenter.callAllList() }
+    }
+
+    private fun errorDetekt(n1: String, n2: String, n3: String, n4: String, n5: String, n6: String, n7: String, n8: String) {
+        println(n1+n2+n3+n4+n5+n6+n7+n8)
     }
 
     private fun listener() = object : Adapter.ListenerAdapter {
